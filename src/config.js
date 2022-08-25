@@ -1,5 +1,5 @@
 // The trigger word that precedes most commands and will activate the bot
-exports.trigger = "physics";
+exports.trigger = "?";
 
 // Bot owner information
 exports.owner = {
@@ -50,7 +50,7 @@ exports.localSleepTime = 3;
 exports.localWakeTime = 9;
 
 // Your desired timezone for displaying times
-exports.timeZone = "America/New_York";
+exports.timeZone = "Bangladesh/Dhaka";
 
 // Time in seconds to ban users for Order 66
 exports.order66Time = 15;
