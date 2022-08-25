@@ -1,0 +1,39 @@
+let groupInfo = {
+    // Thread's ID (used by facebook-chat-api)
+    "threadId": string,
+    // Last message received in the thread
+    "lastMessage": facebook_chat_api.messageObj,
+    // Name of the chat (if it exists), or the names of its members separated by '/'
+    "name": string,
+    // The current thread emoji
+    "emoji": string,
+    // The URL of the current group photo
+    "image": string,
+    // The current thread color (as a hex string)
+    "color": string,
+    // A map from user IDs to nicknames
+    "nicknames": {string: string},
+    // An array of user IDs representing the admins of the group
+    "admins": [string],
+    // Whether the chat has Easter eggs muted (true by default)
+    "muted": bool,
+    // A map from user IDs to stored Spotify playlist objects, which have these props:
+    // name, id, user, uri
+    "playlists": {string: playlistObj},
+    // A map from user IDs to name aliases (which can be used in commands)
+    "aliases": {string: string},
+    // A map from pin names to stored pins for the chat including sender and time info
+    "pinned": {string: pinObj},
+    // A map from event names to stored events for the chat including time and RSVP info
+    "events": {string: eventObj},
+    // A map from mention group names to lists of user IDs representing their members
+    "mentionGroups": {string: [string]},
+    // A flag that records whether the thread is a group
+    "isGroup": bool,
+    // A map from first names of thread members to user IDs
+    "members": {string: string},
+    // A map from user IDs to first names of thread members
+    "names": {string: string},
+    // A regular expression that matches first names and aliases of members in the thread
+    "userRegExp": string
+}
